@@ -3,6 +3,7 @@ import Entypo from '@expo/vector-icons/Entypo';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Feather from '@expo/vector-icons/Feather';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export default function Header() {
     return (
@@ -25,11 +26,17 @@ export default function Header() {
 
             {/* Abas */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabs}>
+                <View style={styles.compassIcon}>
+                    <FontAwesome5 name="compass" size={24} color="#fff" />
+                </View>
                 <View style={styles.tab}><Text style={styles.tabText}>Tudo</Text></View>
-                <View style={styles.tab}><Text style={styles.tabText}>Novidades</Text></View>
+                <View style={styles.tab}><Text style={styles.tabText}>Novidades para você</Text></View>
                 <View style={styles.tab}><Text style={styles.tabText}>Música</Text></View>
                 <View style={styles.tab}><Text style={styles.tabText}>Jogos</Text></View>
+                <View style={styles.tab}><Text style={styles.tabText}>Notícias</Text></View>
+                <View style={styles.tab}><Text style={styles.tabText}>Ao vivo</Text></View>
             </ScrollView>
+
         </View>
     )
 }
@@ -79,5 +86,12 @@ const styles = StyleSheet.create({
 
     tabText: {
         color: '#fff'
-    }
+    },
+
+    compassIcon: {
+    marginRight: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+}
+
 })

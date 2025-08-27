@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import Header from './src/components/Header';
 import Footer from './src/components/Footer';
+import Card from './src/components/Card';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <View style={style.content}>
 
       </View>
+      <Footer />
     </View>
   );
 }
