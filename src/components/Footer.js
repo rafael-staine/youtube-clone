@@ -21,8 +21,8 @@ function Footer() {
                 </View>
 
                 <View style={style.iconContainer}>
-                    <AntDesign name="pluscircleo" size={24} color="#fff" />
-                    <Text style={style.iconText}>...</Text>
+                    <AntDesign name="pluscircleo" size={30} color="#fff" />
+                    <Text style={style.iconText}>.</Text>
                 </View>
 
                 <View style={style.iconContainer}>
@@ -42,19 +42,21 @@ function Footer() {
 const style = StyleSheet.create({
     footer: {
         width: '100%',
-        height: 100,
+        height: 70,
         backgroundColor: '#000',
-        justifyContent: 'center',
-        alignItems: 'center',
+        borderTopWidth: 0.5,
+        borderTopColor: '#333',
         position: 'absolute',
         bottom: 0,
         left: 0,
+        paddingBottom: 8,
     },
     iconsRow: {
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
         alignItems: 'center',
         width: '100%',
+        height: '100%',
     },
     iconContainer: {
         justifyContent: 'center',
@@ -62,10 +64,9 @@ const style = StyleSheet.create({
     },
     iconText: {
         color: '#fff',
-        marginTop: 4,
-        fontSize: 12,
+        marginTop: 2,
+        fontSize: 11,
     }
 })
-
 
 export default Footer

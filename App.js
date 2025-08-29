@@ -8,7 +8,7 @@ export default function App() {
     <View style={style.container}>
       <Header />
       <View style={style.content}>
-
+        <Card />
       </View>
       <Footer />
     </View>
