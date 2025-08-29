@@ -1,41 +1,30 @@
 import { View, Text, StyleSheet, Image } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
-function Card() {
+function Card({ titulo, subtitle, img, imgCanal, tempo}) {
     return (
         <View style={styles.container}>
-            {/* Thumbnail do vídeo */}
-            <View style={styles.thumbnailContainer}>
+
+            <View style={styles.cardsContainer}>
                 <Image
-                    source={{
-                        uri: "",
-                    }}
-                    style={styles.thumbnail}
+                    source={img}
+                    style={styles.fotoVideo}
                 />
 
-                {/* Tempo de duração */}
-                <View style={styles.durationContainer}>
-                    <Text style={styles.duration}>7:24</Text>
+                <View style={styles.containerTempo}>
+                    <Text style={styles.tempo}>{tempo}</Text>
                 </View>
             </View>
 
-            <View style={styles.infoContainer}>
-                {/* Foto do canal */}
+            <View style={styles.informacao}>
                 <Image
-                    source={{
-                        uri: "",
-                    }}
-                    style={styles.avatar}
+                    source={imgCanal}
+                    style={styles.fotoCanal}
                 />
 
-                {/* Textos */}
                 <View style={styles.texts}>
-                    <Text style={styles.title} numberOfLines={2}>
-                        #basscam Só tú és Santo / Uma Coisa | Morada - Ao Vivo em Belo Horizonte
-                    </Text>
-                    <Text style={styles.subtitle}>
-                        Moisés Henrique · 21 mil visualizações · há 4 semanas
-                    </Text>
+                    <Text style={styles.title} numberOfLines={2}>{titulo}</Text>
+                    <Text style={styles.subtitle}>{subtitle}</Text>
                 </View>
 
                 <FontAwesome6 name="ellipsis-vertical" size={24} color="#fff" />
@@ -45,19 +34,23 @@ function Card() {
 }
 
 const styles = StyleSheet.create({
+
     container: {
         marginTop: 50,
         backgroundColor: "#000",
         paddingBottom: 10,
     },
-    thumbnailContainer: {
+
+    cardsContainer: {
         position: "relative",
     },
-    thumbnail: {
+
+    fotoVideo: {
         width: "100%",
         height: 220,
     },
-    durationContainer: {
+
+    containerTempo: {
         position: "absolute",
         bottom: 8,
         right: 8,
@@ -66,31 +59,37 @@ const styles = StyleSheet.create({
         paddingVertical: 2,
         borderRadius: 4,
     },
-    duration: {
+
+    tempo: {
         color: "#fff",
         fontSize: 12,
         fontWeight: "bold",
     },
-    infoContainer: {
+
+    informacao: {
         flexDirection: "row",
         alignItems: "flex-start",
         paddingHorizontal: 10,
         paddingTop: 15,
     },
-    avatar: {
+
+    fotoCanal: {
         width: 36,
         height: 36,
         borderRadius: 50,
         marginRight: 10,
     },
+
     texts: {
         flex: 1,
     },
+
     title: {
         color: "#fff",
         fontSize: 14,
         fontWeight: "bold",
     },
+
     subtitle: {
         color: "#aaa",
         fontSize: 12,

@@ -7,39 +7,40 @@ import Entypo from '@expo/vector-icons/Entypo';
 
 function Footer() {
     return (
-        <View style={style.footer}>
-            <View style={style.iconsRow}>
+        <View style={styles.footer}>
+            <View style={styles.icones}>
 
-                <View style={style.iconContainer}>
+                <View style={styles.iconContainer}>
                     <Entypo name="home" size={24} color="#fff" />
-                    <Text style={style.iconText}>Início</Text>
+                    <Text style={styles.title}>Início</Text>
                 </View>
 
-                <View style={style.iconContainer}>
+                <View style={styles.iconContainer}>
                     <SimpleLineIcons name="social-youtube" size={24} color="#fff" />
-                    <Text style={style.iconText}>Shorts</Text>
+                    <Text style={styles.title}>Shorts</Text>
                 </View>
 
-                <View style={style.iconContainer}>
-                    <AntDesign name="pluscircleo" size={30} color="#fff" />
-                    <Text style={style.iconText}>.</Text>
+                <View style={styles.iconContainer}>
+                    <AntDesign name="pluscircleo" size={24} color="#fff" />
+                    <Text style={styles.title}>Adicionar</Text>
                 </View>
 
-                <View style={style.iconContainer}>
+                <View style={styles.iconContainer}>
                     <MaterialCommunityIcons name="youtube-subscription" size={24} color="#fff" />
-                    <Text style={style.iconText}>Biblioteca</Text>
+                    <Text style={styles.title}>Biblioteca</Text>
                 </View>
 
-                <View style={style.iconContainer}>
+                <View style={styles.iconContainer}>
                     <FontAwesome name="user-circle-o" size={24} color="#fff" />
-                    <Text style={style.iconText}>Você</Text>
+                    <Text style={styles.title}>Você</Text>
                 </View>
             </View>
         </View>
     )
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
+
     footer: {
         width: '100%',
         height: 70,
@@ -51,18 +52,21 @@ const style = StyleSheet.create({
         left: 0,
         paddingBottom: 8,
     },
-    iconsRow: {
+
+    icones: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
         width: '100%',
         height: '100%',
     },
+
     iconContainer: {
         justifyContent: 'center',
         alignItems: 'center',
     },
-    iconText: {
+
+    title: {
         color: '#fff',
         marginTop: 2,
         fontSize: 11,
