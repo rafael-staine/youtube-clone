@@ -17,11 +17,11 @@ export default function App() {
         />
 
         <Card
-          titulo="Build a Full Stack Mobile Application with React Native & Expo - React Native Tutorial"
-          subtitle="Codesistency · 147 mil visualizações · há 3 meses"
-          img="https://i.ytimg.com/an_webp/uBdpV9GGlzo/mqdefault_6s.webp?du=3000&sqp=CNKNyMUG&rs=AOn4CLDd5IR4VD4jsi3Jn63WFjhF1C4jCg"
+          titulo="The Ultimate React Native Course | Build Your First Mobile App in 2025"
+          subtitle="Codesistency · 168 mil visualizações · há 5 meses"
+          img="https://i.ytimg.com/vi/wbj-DuaL748/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD8qVJzT6kP7ohxKQI1tdDygvXOUg"
           imgCanal="https://yt3.googleusercontent.com/1T6rmeQ-uCo_K4cYsCYB3wdfGN51nh3pDA8NSSkFzozrZf3L4NcdXQSlDIL0mfq9w1osWeDdtg=s160-c-k-c0x00ffffff-no-rj"
-          tempo="3:49:31"
+          tempo="5:41:14"
         />
 
       </View>

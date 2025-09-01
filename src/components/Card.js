@@ -27,7 +27,7 @@ function Card({ titulo, subtitle, img, imgCanal, tempo}) {
                     <Text style={styles.subtitle}>{subtitle}</Text>
                 </View>
 
-                <FontAwesome6 name="ellipsis-vertical" size={24} color="#fff" />
+                <FontAwesome6 name="ellipsis-vertical" size={20} color="#fff" />
             </View>
         </View>
     );

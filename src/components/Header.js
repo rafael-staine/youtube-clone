@@ -20,7 +20,7 @@ export default function Header() {
                     <MaterialIcons name="connected-tv" size={24} color="#fff" />
                     <Feather name="bell" size={24} color="#fff" />
                     <Feather name="search" size={24} color="#fff" />
-                    <Entypo name="menu" size={28} color="#fff" />
+                    <Entypo name="menu" size={24} color="#fff" />
                 </View>
             </View>
 

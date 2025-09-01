@@ -22,7 +22,7 @@ function Footer() {
 
                 <View style={styles.iconContainer}>
                     <AntDesign name="pluscircleo" size={24} color="#fff" />
-                    <Text style={styles.title}>Adicionar</Text>
+                    <Text style={styles.title}>Mais</Text>
                 </View>
 
                 <View style={styles.iconContainer}>
